@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * add - Function thatadds two integers and returns the result
  * @x: int to be added to b
