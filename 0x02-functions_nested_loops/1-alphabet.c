@@ -16,6 +16,5 @@ void print_alphabet(void)
 	}
 		_putchar('\n');
 
-	Return(0);
 }
 
