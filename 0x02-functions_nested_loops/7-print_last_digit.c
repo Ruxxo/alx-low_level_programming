@@ -4,7 +4,6 @@
  * @n: The integer to extract the last digit from
  * Return: Value of last digit
  */
-
 int print_last_digit(int n)
 {
 	int last_digit = n % 10;
