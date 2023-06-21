@@ -5,7 +5,7 @@
  * Return: Value of last digit
  */
 
-int print_last_digit(int y)
+int print_last_digit(int x)
 {
 	int x = y % 10;
 
@@ -18,5 +18,6 @@ int print_last_digit(int y)
 		x = -x;
 	}
 	_putchar(x + '0');
+
 	return (x);
 }
