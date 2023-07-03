@@ -1,25 +1,30 @@
 #include "main.h"
 
 /**
-* _strpbrk - Entry point
+* _strspn - Entry point
 * @s: input
 * @accept: input
 * Return: Invariably 0 (Success)
 */
 
-char *_strpbrk(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
-		int m;
+	unsigned int n = 0;
+	int r;
 
-		while (*s)
+	while (*s)
+	{
+		for (r = 0; accept[r]; r++)
 		{
-			for (m = 0; accept[m]; m++)
+			if (*s == accept[r])
 			{
-			if (*s == accept[m])
-			return (s);
+				n++;
+				break;
 			}
-		s++;
+			else if (accept[r + 1] == '\0')
+				return (n);
 		}
-
-	return ('\0');
+		s++;
+	}
+	return (n);
 }
