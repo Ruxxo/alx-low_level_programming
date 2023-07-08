@@ -1,5 +1,0 @@
-#C- static Libraries
-
-##Tasks 
-
-
